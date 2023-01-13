@@ -1,0 +1,124 @@
+body {
+    background-color: rgb(210, 224, 210);
+}
+
+section {
+    display: flex;
+    justify-content: center;
+
+    #todo-area {
+        background-color: #fff;
+        width: 55%;
+        max-width: 600px;
+        min-width: 450px;
+        margin-top: 8%;
+        border: none;
+        border-radius: 10px;
+        overflow: hidden;
+
+        #head {
+            display: flex;
+            justify-content: space-around;
+            background-color: #687e68;
+            height: 70px;
+
+            #title {
+                position: relative;
+                font-size: 30px;
+                // font-family: 'Sofia Sans Extra Condensed', sans-serif;
+                color: rgb(241, 241, 241);
+                bottom: -25px;
+            }
+
+            #input-box {
+                display: flex;
+                align-items: center;
+
+                label {
+                    position: relative;
+                    color: rgb(241, 241, 241);
+                    margin-right: 10px;
+                    font-size: 20px;
+                    bottom: -10px;
+                }
+
+                #text-input {
+                    position: relative;
+                    bottom: -12px;
+                }
+            }
+        }
+
+            
+        #btn-area {
+            display: flex;
+            justify-content: flex-end;
+            margin: 10px 20px 10px 0;
+
+            #clear-box {
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                
+                p {
+                    color: #86a8db;
+                    display: inline-block;
+                }
+                
+                .delete-ico {
+                    color: #86a8db;
+                }
+            }
+        }
+
+        #todo-list {
+            background-color: rgba(#99B0A8, .2);
+            max-height: 478px;
+            
+            .todo-item {
+                padding: 10px 15px;
+                display: flex;
+
+                .favorite-box {
+                    flex: 1;
+
+                    .favorite-ico {
+                        color: #db86a0;
+                        cursor: pointer;
+                    }
+                }
+
+                .todo-text {
+                    display: inline-block;
+                    flex: 7;
+                    margin-left: 15px;
+                    align-items: center;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+                .done {
+                    color: #99B0A8;
+                    text-decoration: 2px line-through;
+                }
+
+                .btn-box {
+                    display: flex;
+                    justify-content: space-around;
+                    margin-right: 5px;
+                    flex: 2;
+
+                    .check-ico {
+                        color: #86a8db;
+                        cursor: pointer;
+                    }
+                    
+
+                    .clear-ico {
+                        color: #db86a0;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

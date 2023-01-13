@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>todo</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section>
+      <div id="todo-area">
+        <div id="head">
+          <h1 id="title">Todo List</h1>
+          <div id="input-box">
+            <label for="text-input">input</label>
+            <input type="text" id="text-input" />
+          </div>
+        </div>
+        <div id="btn-area">
+          <div id="clear-box">
+            <p>All Clear</p>
+            <i class="material-icons delete-ico">delete</i>
+          </div>
+        </div>
+        <ul id="todo-list" class="scroll-y"></ul>
+      </div>
+    </section>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.scroll-y {
+  overflow-y: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+body {
+  background-color: rgb(210, 224, 210);
+}
+
+section {
+  display: flex;
+  justify-content: center;
+}
+section #todo-area {
+  background-color: #fff;
+  width: 55%;
+  max-width: 600px;
+  min-width: 450px;
+  margin-top: 8%;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+}
+section #todo-area #head {
+  display: flex;
+  justify-content: space-around;
+  background-color: #687e68;
+  height: 70px;
+}
+section #todo-area #head #title {
+  position: relative;
+  font-size: 30px;
+  color: rgb(241, 241, 241);
+  bottom: -25px;
+}
+section #todo-area #head #input-box {
+  display: flex;
+  align-items: center;
+}
+section #todo-area #head #input-box label {
+  position: relative;
+  color: rgb(241, 241, 241);
+  margin-right: 10px;
+  font-size: 20px;
+  bottom: -10px;
+}
+section #todo-area #head #input-box #text-input {
+  position: relative;
+  bottom: -12px;
+}
+section #todo-area #btn-area {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px 20px 10px 0;
+}
+section #todo-area #btn-area #clear-box {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+section #todo-area #btn-area #clear-box p {
+  color: #86a8db;
+  display: inline-block;
+}
+section #todo-area #btn-area #clear-box .delete-ico {
+  color: #86a8db;
+}
+section #todo-area #todo-list {
+  background-color: rgba(153, 176, 168, 0.2);
+  max-height: 478px;
+}
+section #todo-area #todo-list .todo-item {
+  padding: 10px 15px;
+  display: flex;
+}
+section #todo-area #todo-list .todo-item .favorite-box {
+  flex: 1;
+}
+section #todo-area #todo-list .todo-item .favorite-box .favorite-ico {
+  color: #db86a0;
+  cursor: pointer;
+}
+section #todo-area #todo-list .todo-item .todo-text {
+  display: inline-block;
+  flex: 7;
+  margin-left: 15px;
+  align-items: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+section #todo-area #todo-list .todo-item .done {
+  color: #99B0A8;
+  text-decoration: 2px line-through;
+}
+section #todo-area #todo-list .todo-item .btn-box {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 5px;
+  flex: 2;
+}
+section #todo-area #todo-list .todo-item .btn-box .check-ico {
+  color: #86a8db;
+  cursor: pointer;
+}
+section #todo-area #todo-list .todo-item .btn-box .clear-ico {
+  color: #db86a0;
+  cursor: pointer;
+}
